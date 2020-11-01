@@ -1,0 +1,14 @@
+@import "_variable.scss";
+
+.text-effect {
+  font-size: 6rem;
+  background-image: url("img/brick.jpg");
+  background-position: center;
+  color: transparent;
+  background-clip: text;
+  transition: all 0.3s;
+}
+.text-effect:hover {
+  transform: skewX(20deg);
+  letter-spacing: 4rem;
+}

@@ -1,0 +1,12 @@
+@import "_variable.scss";
+
+.turtle {
+  height: 30rem;
+  transition: all 0.3s;
+  border-radius: 10rem;
+}
+.turtle:hover {
+  border-radius: 0;
+  filter: grayscale(1);
+  transform: scale(0.9);
+}
