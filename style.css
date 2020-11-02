@@ -129,7 +129,7 @@ body {
 }
 
 .potato-parent {
-  height: 50rem;
+  height: 60rem;
 }
 
 .potato {
@@ -138,23 +138,37 @@ body {
 
 .potato-img {
   position: absolute;
-  width: 15rem;
+  width: 25rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .potato-img-1 {
   height: 200px;
+  position: relative;
+  top: 90%;
 }
 
 .potato-img-2 {
   top: 80%;
-  right: 0;
+  left: 30%;
 }
 
-.potato-img-3 {
-  top: -2rem;
-  left: 0;
+.potato-img:hover {
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+  -webkit-box-shadow: 0 2rem 1rem black;
+  box-shadow: 0 2rem 1rem black;
+  z-index: 2;
+  outline: 1.5rem solid #5f2606;
+}
+
+.potato:hover .potato-img:not(:hover) {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-filter: grayscale(0.8);
+  filter: grayscale(0.8);
+  opacity: 0.7;
 }
 
 html,
@@ -214,6 +228,19 @@ body {
   text-align: center;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  padding-top: 5rem;
+}
+
+.container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-top: 5rem;
 }
 /*# sourceMappingURL=style.css.map */
